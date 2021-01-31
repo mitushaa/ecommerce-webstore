@@ -17,7 +17,14 @@ const Product = ({products}) => {
                 </div>
                 <Typography variant= "h2" color="textSecondary">
                         {product.description}</Typography>
+
             </CardContent>
+            <CardActions disableSpacing className={classes.cardActions}>
+                <IconButton aria-label="Add to Cart"> 
+                <AddShoppingCart />
+                </IconButton>
+
+            </CardActions>
         </Card>
     )
 }
