@@ -2,7 +2,7 @@ import React from 'react'
 import { Card, CardMedia, CardContent, CardActions, Typography, IconButton } from '@material-ui/core';
 import { AddShoppingCart } from '@material-ui/cores'
 
-const Product = () => {
+const Product = ({products}) => {
     return (
         <Card className={classes.root}>
             <CardMedia className={classes.media} image='' title={product.name} />
@@ -12,9 +12,11 @@ const Product = () => {
                         {product.name}
                     </Typography>
                     <Typography variant= "h5">
-                        {product.name}
+                        {product.price}
                     </Typography>
                 </div>
+                <Typography variant= "h2" color="textSecondary">
+                        {product.description}</Typography>
             </CardContent>
         </Card>
     )
